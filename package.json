@@ -1,0 +1,30 @@
+{
+  "name": "xuan-ui",
+  "private": false,
+  "version": "0.0.0",
+  "type": "module",
+  "files": [
+    "lib"
+  ],
+  "main": "./lib/xuan-ui.umd.cjs",
+  "module": "./lib/xuan-ui.js",
+  "exports": {
+    ".": {
+      "import": "./lib/xuan-ui.js",
+      "require": "./lib/xuan-ui.umd.cjs"
+    }
+  },
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "vue": "^3.2.37"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-vue": "^3.1.0",
+    "sass": "^1.54.9",
+    "vite": "^3.1.0"
+  }
+}
