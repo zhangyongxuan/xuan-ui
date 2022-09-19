@@ -1,8 +1,8 @@
-import ptc from './x-picture-to-char';
-import vtc from './x-video-to-char';
-import icon from './x-icon';
+import Ptc from './x-picture-to-char';
+import Vtc from './x-video-to-char';
+import Icon from './x-icon';
 
-const components = [ptc, vtc,icon];
+const components = [Ptc, Vtc,Icon];
 
 
 export default {
@@ -12,7 +12,7 @@ export default {
         });
     }
 }
-export const pictureToChar = ptc;
-export const videoToChar = vtc;
-export const xIcon = icon;
+export const pictureToChar = Ptc;
+export const videoToChar = Vtc;
+export const xIcon = Icon;
 

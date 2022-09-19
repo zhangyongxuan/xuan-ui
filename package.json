@@ -1,7 +1,11 @@
 {
-  "name": "xuan-ui",
+  "name": "xuan-vue-ui",
   "private": false,
-  "version": "0.0.0",
+  "version": "1.0.4",
+  "author": {
+    "name": "轩仔"
+  },
+  "keywords": ["vue","Vue","VUE","video","VIDEO","char"],
   "type": "module",
   "files": [
     "lib"
@@ -9,6 +13,7 @@
   "main": "./lib/xuan-ui.umd.cjs",
   "module": "./lib/xuan-ui.js",
   "exports": {
+    "./lib/style.css": "./lib/style.css",
     ".": {
       "import": "./lib/xuan-ui.js",
       "require": "./lib/xuan-ui.umd.cjs"
@@ -20,7 +25,8 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    "vue": "^3.2.37"
+    "vue": "^3.2.37",
+    "xuan-vue-ui": "^1.0.1"
   },
   "devDependencies": {
     "@vitejs/plugin-vue": "^3.1.0",

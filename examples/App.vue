@@ -5,7 +5,6 @@
 
 <template>
   <x-video-to-char
-    :size="{ width: 500, height: 1000 }"
     :canvasBC="'#fff'"
     :colorful="true"
     :charList="[1,2,3,4,5]"
