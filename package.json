@@ -1,11 +1,18 @@
 {
   "name": "xuan-vue-ui",
   "private": false,
-  "version": "1.0.4",
+  "version": "1.0.5",
   "author": {
     "name": "轩仔"
   },
-  "keywords": ["vue","Vue","VUE","video","VIDEO","char"],
+  "keywords": [
+    "vue",
+    "Vue",
+    "VUE",
+    "video",
+    "VIDEO",
+    "char"
+  ],
   "type": "module",
   "files": [
     "lib"
@@ -34,11 +41,10 @@
   },
   "devDependencies": {
     "@vitejs/plugin-vue": "^3.1.0",
-    "sass": "^1.54.9",
     "@vitejs/plugin-vue-jsx": "^2.0.1",
-    "@vuepress/plugin-docsearch": "^2.0.0-beta.51",
+    "sass": "^1.54.9",
+    "vite": "^3.1.0",
     "vitepress": "1.0.0-alpha.4",
-    "vitepress-theme-demoblock": "^1.4.2",
-    "vite": "^3.1.0"
+    "vitepress-theme-demoblock": "^1.4.2"
   }
 }

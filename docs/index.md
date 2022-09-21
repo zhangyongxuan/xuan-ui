@@ -6,12 +6,12 @@ hero:
   text: 一个自用vue组件库
   tagline: 前端的小前端的白
   image:
-    src: /logo.png
+    src: /logo1.png
     alt: xuan-ui
   actions:
     - theme: brand
       text: 快速使用
-      link: /components/index
+      link: /components/start
     - theme: alt
       text: Gitee
       link: https://gitee.com/zhangyongxuan/xuan-ui
@@ -37,28 +37,15 @@ features:
     <h1 style="font-size:24px;font-weight:bolder">视频字符化</h1>
     <x-video-to-char
         :canvasBC="'#fff'"
+        :charColor="'#000'"
         :size="{width:400,height:800}"
         :colorful="false"
         :random="true"
-        sourceURL="https://server.zhangyongxuan.com/oss/vue-admin/5.mp4"
+        sourceURL="https://www.zhangyongxuan.com/oss/vue-admin/5.mp4"
       />
 </div>
 
 
 
-:::demo 使用type，plain，round来定义 Button 的样式
-
-```vue
-  <template>
-    <button>123</button>
-  </template>
-  <style>
-    button{
-      color:red;
-    }
-  </style>
-```
-
-:::
 
  

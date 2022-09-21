@@ -1,5 +1,5 @@
-import Theme from 'vitepress/client/theme-default';
-import XuanUI from 'xuan-vue-ui'
+import Theme from 'vitepress/theme';
+import XuanUI from 'xuan-vue-ui';
 import 'vitepress-theme-demoblock/theme/styles/index.css'
 import 'xuan-vue-ui/lib/style.css'
 import { registerComponents } from './register-components'

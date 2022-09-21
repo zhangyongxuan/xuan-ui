@@ -44,6 +44,10 @@ const props = defineProps({
     type: String,
     default: "#000",
   },
+  charColor: {
+    type: String,
+    default: "#fff",
+  },
   sourceURL: {
     type: String,
     default: "",
@@ -198,7 +202,7 @@ const draw = () => {
       if (props.colorful) {
         displayCtx.fillStyle = `rgb(${R},${G},${B})`;
       } else {
-        displayCtx.fillStyle = "#000";
+        displayCtx.fillStyle = props.charColor;
       }
       displayCtx.fillText(
         txt,
