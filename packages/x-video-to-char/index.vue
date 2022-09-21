@@ -7,6 +7,7 @@
       :width="size.width"
       :height="size.height"
       @ended="isPlay = false"
+      :muted="muted"
     />
     <canvas ref="handleDataCanvas" style="display: none" />
     <canvas
@@ -40,6 +41,10 @@ export default {
 import { ref, computed, onMounted } from "vue";
 import xIcon from "../x-icon";
 const props = defineProps({
+  muted:{
+    type: Boolean,
+    default: true,
+  },
   canvasBC: {
     type: String,
     default: "#000",

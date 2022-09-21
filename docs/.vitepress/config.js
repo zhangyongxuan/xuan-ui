@@ -52,12 +52,8 @@ export default {
                     text: '开发指南',
                     items: [
                         {
-                            text: '安装',
-                            link: '/components/'
-                        },
-                        {
                             text: '快速上手',
-                            link: '/components/start'
+                            link: '/components/'
                         }
                     ],
 
@@ -78,8 +74,8 @@ export default {
         },
         lastUpdatedText: 'Updated Date',
         footer: {
-            message: 'Released under the MIT License.',
-            copyright: 'Copyright © 2019-present Evan You'
+            message: '自用组件',
+            copyright: 'Copyright © 2019-2022 Xuan-vue-ui'
           }
     },
     markdown: {

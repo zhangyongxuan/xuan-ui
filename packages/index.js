@@ -12,7 +12,7 @@ export default {
         });
     }
 }
-export const pictureToChar = Ptc;
-export const videoToChar = Vtc;
-export const xIcon = Icon;
+export const XPictureToChar = Ptc;
+export const XVideoToChar = Vtc;
+export const XIcon = Icon;
 

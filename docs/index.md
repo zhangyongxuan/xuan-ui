@@ -11,7 +11,7 @@ hero:
   actions:
     - theme: brand
       text: 快速使用
-      link: /components/start
+      link: /components/
     - theme: alt
       text: Gitee
       link: https://gitee.com/zhangyongxuan/xuan-ui
