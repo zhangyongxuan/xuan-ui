@@ -43,6 +43,8 @@ export default{
             const {
                 demoBlockPlugin
             } = require('vitepress-theme-demoblock');
+            const fs = require('fs');
+            fs.writeFileSync('./1.json',JSON.stringify(md))
             md.use(demoBlockPlugin);
         },
         lineNumbers:true

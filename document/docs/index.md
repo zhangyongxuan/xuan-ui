@@ -45,12 +45,13 @@ features:
 </div>
 
 
+
+:::demo 使用type，plain，round来定义 Button 的样式
+
 ```vue
-<x-video-to-char
-  :canvasBC="'#fff'"
-  :size="{width:400,height:800}"
-  :colorful="false"
-  :random="true"
-  sourceURL="https://server.zhangyongxuan.com/oss/vue-admin/5.mp4"
-/>
+  <template>
+    <button>123</button>
+  </template>
 ```
+
+:::
