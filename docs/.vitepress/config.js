@@ -1,3 +1,4 @@
+import VTD from 'vitepress-theme-demoblock';
 export default{
     // 网站标题
     title: 'xuan-vue-ui',
@@ -9,12 +10,7 @@ export default{
         // 添加图标
         ['link', { rel: 'icon', href: '/favicon.ico' }]
     ],
-    plugins: [
-        '@vuepress/active-header-links',   // 页面滚动时自动激活侧边栏链接的插件
-        '@vuepress/back-to-top',          // 返回顶部插件
-        '@vuepress/medium-zoom',          // 图片预览插件
-        '@vuepress/nprogress',        //页面顶部进度条
-    ],
+    plugins: [],
     themeConfig: {
         logo: './logo.png',
         // 展示搜索框
@@ -42,12 +38,10 @@ export default{
         config: (md) => {
             const {
                 demoBlockPlugin
-            } = require('vitepress-theme-demoblock');
-            const fs = require('fs');
-            fs.writeFileSync('./1.json',JSON.stringify(md))
+            } = VTD;
             md.use(demoBlockPlugin);
         },
-        lineNumbers:true
+        // lineNumbers:true
     }
 }
 

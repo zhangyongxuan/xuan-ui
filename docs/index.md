@@ -52,6 +52,13 @@ features:
   <template>
     <button>123</button>
   </template>
+  <style>
+    button{
+      color:red;
+    }
+  </style>
 ```
 
 :::
+
+ 
