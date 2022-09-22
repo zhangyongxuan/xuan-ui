@@ -13,7 +13,6 @@
     "VIDEO",
     "char"
   ],
-  "type": "module",
   "files": [
     "lib"
   ],
