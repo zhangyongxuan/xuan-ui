@@ -8,11 +8,10 @@ import 'xuan-vue-ui/lib/style.css';
 
 <template>
   <x-video-to-char
-    :canvasBC="'#fff'"
+    :size="{width:1303,height:1000}"
     :colorful="true"
-    :charList="[1,2,3,4,5]"
     :random="true"
-    sourceURL="https://www.zhangyongxuan.com/oss/vue-admin/1.mp4"
+    sourceURL="https://www.zhangyongxuan.com/oss/vue-admin/5.mp4"
   />
 </template>
 

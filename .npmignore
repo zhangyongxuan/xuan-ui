@@ -27,6 +27,7 @@ yarn-error.log*
 examples/
 packages/
 public/
+xuidocs/
 vite.config.js
 *.map
 *.html

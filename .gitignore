@@ -12,6 +12,7 @@ document/node_modules
 lib
 dist
 dist-ssr
+xuidocs
 *.local
 
 # Editor directories and files

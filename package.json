@@ -1,7 +1,7 @@
 {
   "name": "xuan-vue-ui",
   "private": false,
-  "version": "1.0.8",
+  "version": "1.0.10",
   "author": {
     "name": "轩仔"
   },
@@ -17,13 +17,13 @@
   "files": [
     "lib"
   ],
-  "main": "./lib/xuan-ui.umd.cjs",
-  "module": "./lib/xuan-ui.js",
+  "main": "./lib/xuan-ui.umd.js",
+  "module": "./lib/xuan-ui.mjs",
   "exports": {
     "./lib/style.css": "./lib/style.css",
     ".": {
-      "import": "./lib/xuan-ui.js",
-      "require": "./lib/xuan-ui.umd.cjs"
+      "import": "./lib/xuan-ui.mjs",
+      "require": "./lib/xuan-ui.umd.js"
     }
   },
   "scripts": {
@@ -37,7 +37,7 @@
   },
   "dependencies": {
     "vue": "^3.2.37",
-    "xuan-vue-ui": "^1.0.1"
+    "xuan-vue-ui": "^1.0.10"
   },
   "devDependencies": {
     "@vitejs/plugin-vue": "^3.1.0",

@@ -6,14 +6,16 @@ export default {
     // 网站描述
     description: '一个基于vue3的自用ui组件库',
     // 打包目录
-    dest: './dist',
+    base:'/xuidocs/',
+    outDir:'../xuidocs',
+    dest: './xuidocs',
     plugins: [],
     head: [
         // 添加图标
-        ['link', { rel: 'icon', href: '/favicon.ico' }]
+        ['link', { rel: 'icon', href: '/xuidocs/favicon.ico' }]
     ],
     themeConfig: {
-        logo: './logo1.png',
+        logo: '/logo1.png',
         // 展示搜索框
         algolia: {
             appId: "EVAA80MZG2",

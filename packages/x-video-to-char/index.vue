@@ -41,7 +41,7 @@ export default {
 import { ref, computed, onMounted } from "vue";
 import xIcon from "../x-icon";
 const props = defineProps({
-  muted:{
+  muted:{  
     type: Boolean,
     default: true,
   },
