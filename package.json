@@ -1,7 +1,7 @@
 {
   "name": "xuan-vue-ui",
   "private": false,
-  "version": "1.0.11",
+  "version": "1.0.13",
   "author": {
     "name": "轩仔"
   },
@@ -33,7 +33,8 @@
     "docs:build": "vitepress build docs",
     "docs:serve": "vitepress serve docs",
     "register:components": "vitepress-rc",
-    "commit":"node commitCode.js "
+    "commit": "node ./script/commit.js ",
+    "publish:npm": "node ./script/publish.js "
   },
   "dependencies": {
     "element-plus": "^2.2.17",
