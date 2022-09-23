@@ -1,3 +1,4 @@
+
 const exec = require('child_process').exec;
 const [path, filePath, ...rest] = process.argv;
 const commitMsg = rest.join(',');
@@ -28,17 +29,29 @@ const commitMsg = rest.join(',');
 //         })
 //     })
 // })
+const execCommand = (cmd) => {
+    return new Promise((resolve, reject) => {
+        exec(cmd, (error, stdout, stderr) => {
+            if (error) {
+                reject(error);
+            } else if (stderr) {
+                reject(stderr);
+            } else {
+                resolve(stdout);
+            }
+        })
+    })
+};
 
-const commitCode = async(m)=>{
+const commitCode = async (m) => {
     try {
-        await exec('git add .');
-        await exec(`git commit -m '${commitMsg}'`);
-        await exec(`git push origin master`);
-        await exec(`git push gitee master`);
+        await execCommand('git add .');
+        await execCommand(`git commit -m '${commitMsg}'`);
+        await execCommand(`git push origin master`);
+        await execCommand(`git push gitee master`);
     } catch (error) {
         console.error(error);
     }
 }
 
 commitCode(commitMsg);
-// git add . ;git commit -m 'update';git push origin master;git push gitee master
