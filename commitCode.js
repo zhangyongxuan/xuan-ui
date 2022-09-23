@@ -9,7 +9,6 @@ exec(` git add . `, (error, stdout, stderr) => {
         return;
     }
     exec(`git commit -m '${commitMsg}'`, (error1) => {
-
         if (error1) {
             console.error('error: ' + error1);
             return;
