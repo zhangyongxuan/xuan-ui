@@ -1,5 +1,5 @@
 import VTD from 'vitepress-theme-demoblock';
-import 'xuan-vue-ui/lib/style.css';
+// import 'xuan-vue-ui/lib/style.css';
 export default {
     // 网站标题
     title: 'xuan-vue-ui',
