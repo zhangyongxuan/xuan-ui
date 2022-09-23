@@ -45,10 +45,14 @@ const execCommand = (cmd) => {
 
 const commitCode = async (m) => {
     try {
-        await execCommand('git add .');
-        await execCommand(`git commit -m '${commitMsg}'`);
-        await execCommand(`git push origin master`);
-        await execCommand(`git push gitee master`);
+        const msg = await execCommand('git add .');
+        console.log(msg);
+        const msg1 = await execCommand(`git commit -m '${commitMsg}'`);
+        console.log(msg1);
+        const msg2 = await execCommand(`git push origin master`);
+        console.log(msg2);
+        const msg3 = await execCommand(`git push gitee master`);
+        console.log(msg3);
     } catch (error) {
         console.error(error);
     }
