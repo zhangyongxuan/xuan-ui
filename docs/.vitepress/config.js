@@ -38,10 +38,10 @@ export default {
                 text: '首页',
                 link: '/',
             },
-            // {
-            //     text: '指南',
-            //     link: '/development/',
-            // },
+            {
+                text: '指南',
+                link: '/development/',
+            },
             {
                 text: '组件',
                 link: '/components/',
