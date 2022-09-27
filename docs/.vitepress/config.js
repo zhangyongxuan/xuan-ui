@@ -21,10 +21,10 @@ export default {
         algolia: {
             appId: "EVAA80MZG2",
             apiKey: '67995fb2217bd2e764c4a5c028fb90ff',
-            indexName: 'vite-press',
-            searchParameters: {
-                faeFilters: ['tags: guide, api']
-            }
+            indexName: 'xuan_ui_docs',
+            // searchParameters: {
+            //     faeFilters: ['tags: guide, api']
+            // }
         },
         socialLinks:[
 
