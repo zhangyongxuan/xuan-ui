@@ -22,6 +22,9 @@ export default {
             appId: "EVAA80MZG2",
             apiKey: '67995fb2217bd2e764c4a5c028fb90ff',
             indexName: 'xuan_ui_docs',
+            searchPagePath: false,
+            contextualSearch: false,
+            searchParameters: {}
             // searchParameters: {
             //     faeFilters: ['tags: guide, api']
             // }
