@@ -7,9 +7,8 @@ export default {
     // 网站描述
     description: '一个基于vue3的自用ui组件库',
     // 打包目录
-    base:'/xuidocs/',
-    outDir:'../xuidocs',
-    dest: './xuidocs',
+    base: '/xuidocs/',
+    outDir: '../xuidocs',
     plugins: [],
     head: [
         // 添加图标
@@ -29,7 +28,7 @@ export default {
             //     faeFilters: ['tags: guide, api']
             // }
         },
-        socialLinks:[
+        socialLinks: [
 
             {
                 icon: 'github',
@@ -44,10 +43,13 @@ export default {
             {
                 text: '指南',
                 link: '/development/',
+                activeMatch: '/development/',
+
             },
             {
                 text: '组件',
                 link: '/components/',
+                activeMatch: '/components/',
             }
 
         ],
@@ -56,6 +58,7 @@ export default {
             '/components/': [
                 {
                     text: '开发指南',
+                    collapsible: true,
                     items: [
                         {
                             text: '快速上手',
@@ -66,6 +69,7 @@ export default {
                 },
                 {
                     text: '组件',
+                    collapsible: true,
                     items: [
                         {
                             text: '视频字符化组件',
@@ -82,7 +86,7 @@ export default {
         footer: {
             message: '自用组件',
             copyright: 'Copyright © 2019-2022 Xuan-vue-ui'
-          }
+        }
     },
     markdown: {
         config: (md) => {
@@ -91,6 +95,9 @@ export default {
             } = VTD;
             md.use(demoBlockPlugin);
         },
+        headers: {
+            level: [0, 0]
+        }
         // lineNumbers:true
     }
 }
